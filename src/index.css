@@ -26,20 +26,17 @@ ul{
 .profile{
   background-color: white;
   border-radius: 4px;
-  width: 200px;
+  width: 210px;
   margin: auto;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .description{
-
+padding: 5px;
 }
 
 .container{
   padding: 10px 0;
-  border-radius: 4px;
-  margin: 0 auto;
-  width: 100%;
   background-color: lightgray;
 }

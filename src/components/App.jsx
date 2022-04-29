@@ -1,9 +1,9 @@
 import Profile from './Profile';
 import user from '../path/user';
 
-export default function App() {
+ function App() {
   return (
-    <div className='container'>
+    <div className="container">
       <Profile
         username={user.username}
         tag={user.tag}
@@ -14,3 +14,4 @@ export default function App() {
     </div>
   );
 }
+export default App
