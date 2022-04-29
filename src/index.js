@@ -8,3 +8,5 @@ import React from 'react';
 //     <App />
 //   </React.StrictMode>
 // );
+const e = React.createElement('div');
+console.log("e")
