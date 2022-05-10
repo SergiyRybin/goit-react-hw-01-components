@@ -1,7 +1,7 @@
 import Profile from './Profile';
 import user from '../path/user';
 
- function App() {
+export default function App() {
   return (
     <div className="container">
       <Profile
@@ -14,4 +14,3 @@ import user from '../path/user';
     </div>
   );
 }
-export default App
