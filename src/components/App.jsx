@@ -3,9 +3,9 @@ import user from '../path/user';
 import Statistics from './Statistics';
 import data from '../path/data';
 import Friendlist from './FriendList';
-import friends from '../path/friends'
-
-
+import friends from '../path/friends';
+import TransactionHistory from './TransactionHistory'
+import transactions from '../path/transactions';
 
 export default function App() {
   return (
@@ -21,7 +21,10 @@ export default function App() {
         <Statistics title="Upload stats" stats={data} />
       </div>
       <div>
-        <Friendlist friends ={friends}/>
+        <Friendlist friends={friends} />
+      </div>
+      <div>
+        <TransactionHistory items={transactions} />
       </div>
     </div>
 

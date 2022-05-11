@@ -28,7 +28,6 @@ ul {
   background-color: white;
   border-radius: 4px;
   width: 210px;
-  margin: 10px auto;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -38,7 +37,11 @@ ul {
 }
 
 .container {
-  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center;
+  padding: 10px;
   background-color: lightgray;
 }
 .stats {
@@ -63,15 +66,13 @@ ul {
 }
 .statistics {
   width: 210px;
-  margin: 0 auto;
+  margin: 0;
   background-color: azure;
   border-radius: 4px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .friend-list {
-  /* display: flex; */
-  margin: 10px auto;
   border-radius: 4px;
 
   justify-content: center;
@@ -103,4 +104,19 @@ ul {
 
 .friend-list li p{
   margin-left: 10px;
+}
+
+.transaction-history {
+  border-collapse: collapse;
+  text-align: center;
+}
+.transaction-history thead{ 
+  background-color: aqua;
+}
+.transaction-history tbody{
+  background-color: azure;
+}
+.transaction-history, th, td{
+  border: 1px solid black;
+
 }
