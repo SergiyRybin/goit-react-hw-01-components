@@ -1,54 +1,14 @@
-// import data from '../path/data';
-// export default console.log(data)
-
-// export default function Statistics({ stats }) {
-//   console.log(stats);
-
-//   return (
-//     <div>
-//       {stats.map(st => (
-//         <section className="statistics">
-//           <h2 className="title">Upload stats</h2>
-
-//           <ul className="stat-list">
-//             <li className="item">
-//               <span className="label">{st.label}</span>
-//               <span className="percentage"> {st.percentage}</span>
-//             </li>
-//             <li className="item">
-//               <span className="label">{st.label}</span>
-//               <span className="percentage"> {st.percentage}</span>
-//             </li>
-//             <li className="item">
-//               <span className="label">{st.label}</span>
-//               <span className="percentage"> {st.percentage}</span>
-//             </li>
-//             <li className="item">
-//               <span className="label">{st.label}</span>
-//               <span className="percentage"> {st.percentage}</span>
-//             </li>
-//             <li className="item">
-//               <span className="label">{st.label}</span>
-//               <span className="percentage"> {st.percentage}</span>
-//             </li>
-//           </ul>
-//         </section>
-//       ))}
-//     </div>
-//   );
-// }
+import PropTypes from 'prop-types';
 
 const Statistics = ({ stats }) => {
-  console.log(stats);
   return (
-    
     <section className="statistics">
-       <h2 className="title">Upload stats</h2>
+      <h2 className="title">Upload stats</h2>
       <ul className="stat-list">
-        {stats.map(st => (
-          <li key={st.id} className="item">
-            <span className="label"> {st.label} </span> 
-            <span className="percentage"> {st.percentage}</span>
+        {stats.map(({ id, label, percentage }) => (
+          <li key={id} className="item">
+            <span className="label"> {label} </span>
+            <span className="percentage"> {percentage}</span>
           </li>
         ))}
       </ul>
@@ -56,3 +16,9 @@ const Statistics = ({ stats }) => {
   );
 };
 export default Statistics;
+
+Statistics.prototype = {
+  id: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
+};

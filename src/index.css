@@ -1,4 +1,5 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
+/* bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -27,7 +28,7 @@ ul {
   background-color: white;
   border-radius: 4px;
   width: 210px;
-  margin: auto;
+  margin: 10px auto;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -40,9 +41,9 @@ ul {
   padding: 10px 0;
   background-color: lightgray;
 }
- /* {
-  text-align: center;
-} */
+.stats {
+  padding: 0 5px;
+}
 .stat-list {
   display: flex;
   align-items: center;
@@ -51,14 +52,55 @@ ul {
 .item {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  width: 60px;
-  border: 1px solid black;
-  margin: 0 2px;
-  background-color: white;
+  width: 100%;
+  background-color: bisque;
+  outline: 1px solid lightgray;
 }
 .label,
 .percentage,
 .title {
   text-align: center;
+}
+.statistics {
+  width: 210px;
+  margin: 0 auto;
+  background-color: azure;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.friend-list {
+  /* display: flex; */
+  margin: 10px auto;
+  border-radius: 4px;
+
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+}
+.friend-list li{
+  margin-bottom: 15px;
+  flex-direction: row;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+}
+.status{
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.status.onLine{
+  background-color: green;
+}
+.status.offLine{
+  background-color: red;
+}
+
+.friend-list li p{
+  margin-left: 10px;
 }
