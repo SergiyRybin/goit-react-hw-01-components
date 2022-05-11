@@ -17,7 +17,6 @@ const Statistics = ({ stats }) => {
 };
 export default Statistics;
 
-
 Statistics.prototype = {
   id: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
