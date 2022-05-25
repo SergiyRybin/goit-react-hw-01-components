@@ -1,15 +1,19 @@
-
 .transactionHistory {
-    border-collapse: collapse;
-    text-align: center;
-  }
-  .transactionHistory thead{ 
-    background-color: aqua;
-  }
-  .transactionHistory tbody{
-    background-color: azure;
-  }
-  .transactionHistory, th, td{
-    border: 1px solid black;
-  
-  }
+  border-collapse: collapse;
+  text-align: center;
+}
+thead {
+  background-color: aqua;
+}
+tbody {
+  background-color: azure;
+}
+.transactionHistory,
+th,
+td {
+  border: 1px solid black;
+}
+
+.tbodySecond {
+  background-color: lightgray;
+}

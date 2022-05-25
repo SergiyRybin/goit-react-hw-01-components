@@ -19,9 +19,13 @@ const FriendList = ({ friends }) => {
 };
 export default FriendList;
 
-FriendList.prototype = {
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  isOnlin: PropTypes.bool.isRequired,
-  avatar: PropTypes.string.isRequired,
+FriendList.propType = {
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnlin: PropTypes.bool.isRequired,
+      avatar: PropTypes.string.isRequired,
+    }),
+  ),
 };

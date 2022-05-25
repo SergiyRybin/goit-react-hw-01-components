@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from './Statistics.module.css'
+import s from './Statistics.module.css';
 
 const Statistics = ({ stats }) => {
   return (
@@ -18,8 +18,12 @@ const Statistics = ({ stats }) => {
 };
 export default Statistics;
 
-Statistics.prototype = {
-  id: PropTypes.number.isRequired,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
+Statistics.propType = {
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
 };
